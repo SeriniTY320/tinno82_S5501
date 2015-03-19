@@ -705,7 +705,8 @@ MTK_FAN5402_SUPPORT=no
 
 # use external charger IC, MTK support
 MTK_FAN5405_SUPPORT=no
-MTK_FASTBOOT_SUPPORT=no
+MTK_FASTBOOT_SUPPORT=yes
+MTK_SEC_FASTBOOT_UNLOCK_SUPPORT=yes
 
 # For NAND phone such as in EMMC phone with internal sd card, FAT on NAND feature was cut from NAND to be a independent fat partition,and create FAT image file over /fat yaffs2 file system, then let NAND phone can support FAT file system in internal.
 MTK_FAT_ON_NAND=no
@@ -1210,7 +1211,7 @@ MTK_SEND_RR_SUPPORT=yes
 MTK_SENSOR_SUPPORT=yes
 
 # sdcard will be a folder of /data
-MTK_SHARED_SDCARD=yes
+MTK_SHARED_SDCARD=no
 
 # this feature is used for notification when Msensor accuracy is not good in the situation that user is using a m-sensor related APK. a toast will be showen when m-sensor accuracy is not good once.
 MTK_SHOW_MSENSOR_TOAST_SUPPORT=no
